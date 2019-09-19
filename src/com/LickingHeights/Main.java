@@ -12,10 +12,7 @@ public class Main {
     String name;
     Double inch;
     Double pound;
-    Double cm;
-    Double kg;
-    Double kg2;
-    Double cm2;
+    int imp;
 
     System.out.println("Hello, what is your name?");
         name = keyboard.nextLine();
@@ -27,15 +24,19 @@ public class Main {
     System.out.println("What is your weight in pounds?");
         pound = keyboard.nextDouble();
     System.out.println("Now your BMI will be calculated.");
-        cm = 2.54;
-        kg = 0.453592;
-        kg2 = inch*cm;
-        cm2 = pound*kg;
-        System.out.println(inch*cm);
-        System.out.println(pound*kg);
-        System.out.print("Your BMI is ");
-        System.out.println(kg2/cm2*cm2);
+        imp = 703;
 
+        System.out.println(" ");
+        System.out.println("Your Body Mass Index is:");
+        System.out.print(imp*pound/(inch*inch));
+
+    System.out.println(" ");
+    System.out.println("For the average adult, 20-24 is normal.");
+    System.out.println("For women, less than or equal to 19 is underweight.");
+    System.out.println("For men, less than 20 is underweight.");
+    System.out.println("25-29 is overweight");
+    System.out.println("30-39 is obese");
+    System.out.println("Over 40 is extreme obesity.");
 
 
 
